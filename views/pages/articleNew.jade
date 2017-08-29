@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+  .container
+    h1.text-center myblog
+  .row
+    .col-md-5.col-md-offset-3
+      form.for-horzotal(method="POST",action="/article/new")
+        .form-group.clearfix
+          label.col-sm-2.control-label(for="title") 标题
+          .col-sm-10
+            input#title.form-control(type="text",name="article[title]")
+        .form-group.clearfix
+          label.col-sm-2.control-label(for="conment") 内容
+          .col-sm-10
+            textarea(rows="3" cols="71" name="article[comment]")
+          .row.text-center  
+            button.btn.btn-primary(type="submit") 提交

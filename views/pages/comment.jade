@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+  .container
+    .row
+      .col-md-3
+        .avatar
+          img(src="http://oug5mm6ex.bkt.clouddn.com/avatar.jpg")
+      .col-md-5
+        .segment
+          .title #{article.title}
+          .detail #{article.comment}
+          .dres
+            span.create_time
+    .row
+      .col-md-5.col-md-offset-3
+        .comment
+          h4 留言
+          .row.commentator
+            each item in comment
+              .col-md-1
+                img(src="http://oug5mm6ex.bkt.clouddn.com/avatar.jpg")
+              .col-md-10.comment-rg
+                a(href="") #{item.from.name}
+                span.time #{moment(item.meta.createAt).format('HH:mm MM/DD/YYYY')}
+                p #{item.content}
+          form.for-horzotal(method="POST",action="/article/#{article._id}")
+            input(type="hidden", name="comment[article]", value="#{article._id}")
+            input(type="hidden", name="comment[from]", value="#{user._id}") 
+            textarea(name="comment[content]")
+            .row.text-center
+              button.btn.btn-primary(type="submit") 提交

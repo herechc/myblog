@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  .container
+    h1.text-center #{title}
+    each item in article
+      .row
+        .col-md-3
+          .avatar
+            img(src="http://oug5mm6ex.bkt.clouddn.com/avatar.jpg")
+        .col-md-5
+          .segment
+            a(href="/article/#{item._id}").title #{item.title}
+            .detail #{item.comment}
+            .dres
+              span.create_time #{moment(item.meta.createAt).format('HH:mm MM/DD/YYYY')}

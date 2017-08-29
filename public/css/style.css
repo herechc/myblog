@@ -1,0 +1,85 @@
+/* ---------- 全局样式 ---------- */
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.modal-footer {
+  text-align: center
+}
+
+.segment {
+  position: relative;
+  background: #fff;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
+  margin: 0.5rem 1rem;
+  padding: 1em;
+  border-radius: .28571429rem;
+  border: 1px solid rgba(34, 36, 38, .15);
+}
+.segment .title{
+  color:#555
+}
+.detail{
+  margin-top:5px
+}
+.dres{
+  margin-top:20px
+}
+.avatar img{
+  border-radius: 3px;
+  width: 48px;
+  margin: 0.5rem 0;
+  height: 48px;
+  float: right;
+}
+.comment{
+  border: 1px solid rgba(34, 36, 38, .15);
+  margin: 0.5rem 1rem;
+  padding: 15px;
+}
+.comment > h4{
+  color: rgba(0,0,0,.87);
+  font-size:16px;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom:10px;
+  border-bottom:1px solid rgba(34, 36, 38, .15);
+}
+.comment p{
+  text-align: left;
+  font-size:14px;
+  color: rgba(0,0,0,.87);
+}
+.comment-rg{
+  margin-left:10px;
+  height:50px
+}
+.commentator img{
+  width:35px;
+  vertical-align: top;
+  height:29px;
+}
+.commentator .col-md-5{
+  padding-left:0
+}
+.commentator a{
+  font-weight: 700;
+  color: rgba(0,0,0,.87);
+}
+.commentator .time{
+  margin-left:10px;
+  color: rgba(0,0,0,.4);
+}
+.comment textarea{
+  width:400px;
+  font-size:14px;
+  color:#555;
+  height:150px;
+  border: 1px solid rgba(34, 36, 38, .15);
+}
