@@ -12,8 +12,12 @@ A myblog for my first nodejs demo
 ## 结构
 
 1.文章列表: http://localhost:5600/article/list
+
 2.登录页:http://localhost:5600/signin
+
 3.注册页:http://localhost:5600/signup
+
 4.文章留言页：http://localhost:5600/article/:id
 
-..未完待续
+
+.....未完待续
